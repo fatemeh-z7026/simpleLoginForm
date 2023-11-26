@@ -11,18 +11,24 @@ body {
     rgba(120, 154, 159, 1) 91%
   );
 
+  font-size: 1.6rem;
+  overflow: hidden;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-size: 1.6rem;
 }
 .login-form {
   background-color: #edf4f5;
   border-radius: 5px;
   width: 100%;
   max-width: 350px;
+  position: relative;
+  z-index: 1;
 }
 
 .form-group {
@@ -63,4 +69,36 @@ label {
   color: #054950;
   font-weight: 600;
   font-size: 1.6rem;
+}
+
+/*Modal*/
+
+.modalD {
+  background-color: #ff0000;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  z-index: 999;
+}
+
+.modalS {
+  background-color: #32a842;
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  z-index: 1;
 }
