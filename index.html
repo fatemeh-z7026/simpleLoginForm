@@ -19,12 +19,18 @@
     <div class="container">
       <div class="login-form">
         <div class="form-group">
-          <label class="" for="username">User Name:</label>
-          <input class="" type="text" id="username" />
+          <label for="username">User Name:</label>
+          <input class="username" type="text" onkeydown="userKeyValidation()" />
+          <sub class="sub-user"></sub>
         </div>
         <div class="form-group">
-          <label class="" for="password">Password:</label>
-          <input class="" type="text" id="password" />
+          <label for="password">Password:</label>
+          <input
+            class="password"
+            type="password"
+            onkeydown="passwordKeyValidation()"
+          />
+          <sub class="sub-password"></sub>
         </div>
         <div class="form-group">
           <button onclick="dataValidation()" class="login-btn">Login</button>
